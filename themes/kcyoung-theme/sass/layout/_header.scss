@@ -21,12 +21,12 @@
     a {
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: 1px 1px 2px #000; 
+      text-shadow: 1px 1px 2px #000;
       padding: 0 10px;
       color: #fff;
       &:hover {
-        color: #2fc4c4;
+        color: $color_hover;
       }
     }
   }
-}
+} // .site-branding

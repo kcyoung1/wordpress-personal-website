@@ -16,9 +16,33 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-			<div class="hero-banner">
 
-			</div>
+			<!-- Hero Banner -->
+			<div class="hero-banner">
+				<h1>Kurtis Young</h1>
+			</div><!-- .hero-banner -->
+
+			<!-- About -->
+			<section class="about">
+				<div class="about-text">
+					<p>
+						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
+					</p>
+				</div>
+
+			<!-- Projects -->
+
+
+
+			<!-- Abilities -->
+
+
+
+			<!-- Contact	 -->
+
+
+			
+			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

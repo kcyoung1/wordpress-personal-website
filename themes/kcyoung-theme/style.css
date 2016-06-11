@@ -1,3 +1,11 @@
+.center, .hero-banner, .about {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -215,5 +223,13 @@ html {
 .hero-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(assets/images/hero-image.jpg) no-repeat center;
   background-size: cover, cover;
-  height: 750px;
+  height: 800px;
   width: 100%; }
+  .hero-banner h1 {
+    color: #fff; }
+
+.about {
+  height: 250px; }
+  .about p {
+    font-size: 1.5rem;
+    width: 400px; }

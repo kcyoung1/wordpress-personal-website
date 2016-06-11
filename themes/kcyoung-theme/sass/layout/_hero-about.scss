@@ -2,6 +2,18 @@
   background: linear-gradient(180deg,rgba(0,0,0,.4)  0,rgba(0,0,0,.4)),
   url(assets/images/hero-image.jpg) no-repeat center;
   background-size: cover, cover;
-  height: 750px;
+  height: 800px;
   width: 100%;
+  @extend .center;
+  h1 {
+    color: #fff;
+  }
+}
+.about {
+  @extend .center;
+  height: 250px;
+  p {
+    font-size: 1.5rem;
+    width: 400px;
+  }
 }
