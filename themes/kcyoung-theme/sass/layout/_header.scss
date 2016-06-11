@@ -1,0 +1,27 @@
+.site-branding {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  border-bottom: 1px solid #b0acac;
+  width: 100%;
+  position: fixed;
+  background: rgba(226, 226, 226, 0.84);
+  img {
+    margin-left: 100px;
+    height: 50px;
+    width: 50px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin-right: 100px;
+    a {
+      text-decoration: none;
+      padding: 0 10px;
+      color: #fff;
+      &:hover {
+        color: #2fc4c4;
+      }
+    }
+  }
+}

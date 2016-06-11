@@ -11,18 +11,16 @@
 
 ?>
 
-	</div><!-- #content -->
+		</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'kcyoung-theme' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'kcyoung-theme' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'kcyoung-theme' ), 'kcyoung-theme', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			<div class="site-info">
 
-<?php wp_footer(); ?>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
 
-</body>
+	<?php wp_footer(); ?>
+
+	</body>
 </html>
