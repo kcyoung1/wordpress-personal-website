@@ -11,6 +11,7 @@
 }
 .about {
   @extend .center;
+  flex-direction: column; 
   height: 250px;
   p {
     font-size: 1.5rem;

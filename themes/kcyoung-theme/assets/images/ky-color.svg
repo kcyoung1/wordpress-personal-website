@@ -6,10 +6,10 @@
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="ky-color">
-            <text id="&lt;ky&gt;" font-family="AndaleMono, Andale Mono" font-size="101" font-weight="normal" fill="#24D9CB">
-                <tspan x="18" y="156">&lt;ky&gt;</tspan>
+            <ellipse id="Oval-3" stroke="#24D9CB" stroke-width="9" fill="#24D9CB" cx="140.5" cy="130" rx="120.5" ry="124"></ellipse>
+            <text id=".ky" font-family="AndaleMono, Andale Mono" font-size="101" font-weight="normal" fill="#FFFFFF">
+                <tspan x="50" y="156">.ky</tspan>
             </text>
-            <ellipse id="Oval-3" stroke="#24D9CB" stroke-width="9" cx="140.5" cy="130" rx="120.5" ry="124"></ellipse>
         </g>
     </g>
 </svg>

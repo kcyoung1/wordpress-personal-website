@@ -24,24 +24,31 @@ get_header(); ?>
 
 			<!-- About -->
 			<section class="about">
-				<div class="about-text">
+					<h1>About</h1>
 					<p>
 						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
 					</p>
-				</div>
-
+			</section>
 			<!-- Projects -->
-
+			<section class="projects">
+				<h1>Projects</h1>
+			</section>
 
 
 			<!-- Abilities -->
+			<section class="abilities">
+				<h1>Abilities</h1>
+			</section>
 
 
 
 			<!-- Contact	 -->
+			<section class="contact">
+				<h1>Contact</h1>
+			</section>
 
 
-			
+
 			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
