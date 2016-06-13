@@ -1,3 +1,21 @@
 .projects {
-  @extend .center;
+  .project-wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project-image{
+
+    img {
+      position: relative;
+      max-height: 200px;
+      max-width: 350px;
+    }
+  }
+  .project-info {
+    position: absolute;
+    top: 0
+    
+  }
 }

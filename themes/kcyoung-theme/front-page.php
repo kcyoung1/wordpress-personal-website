@@ -29,10 +29,15 @@ get_header(); ?>
 						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
 					</p>
 			</section>
-			<!-- Projects -->
-			<section class="projects">
-				<h1>Projects</h1>
 
+			<!-- Projects -->
+
+			<section class="projects">
+				<div class="center">
+					<h1>Projects</h1>
+				</div>
+
+				<ul>
 				<?php
 					$query = new WP_Query( array(
 						'post_type' => 'projects',
@@ -55,12 +60,12 @@ get_header(); ?>
 						</div>
 					</li>
 
-				<?php endwhile;
-									wp_reset_postdata(); ?>
-			</ul>
-			<p class="clearfix">
-				<a href="/projects" class="button">View More</a>
-			</p>
+					<?php endwhile;
+										wp_reset_postdata(); ?>
+				</ul>
+				<p class="clearfix">
+					<a href="/projects" class="button">View More</a>
+				</p>
 			</section>
 
 
