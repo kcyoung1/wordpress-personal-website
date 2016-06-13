@@ -32,6 +32,35 @@ get_header(); ?>
 			<!-- Projects -->
 			<section class="projects">
 				<h1>Projects</h1>
+
+				<?php
+					$query = new WP_Query( array(
+						'post_type' => 'projects',
+						'order' => 'ASC',
+						'orderby' => 'name',
+						'posts_per_page' => 6)
+					);
+
+					while ( $query->have_posts() ) : $query->the_post(); ?>
+
+					<li>
+						<div class="project-wrap">
+							<div class="project-image">
+								<?php the_post_thumbnail( 'full' ); ?>
+							</div>
+							<div class="project-info">
+								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+								<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
+							</div>
+						</div>
+					</li>
+
+				<?php endwhile;
+									wp_reset_postdata(); ?>
+			</ul>
+			<p class="clearfix">
+				<a href="/projects" class="button">View More</a>
+			</p>
 			</section>
 
 
