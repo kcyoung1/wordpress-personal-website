@@ -3,29 +3,29 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px;
-  border-bottom: 1px solid #b0acac;
+  border-bottom: 1px solid $color__li-grey;
   width: 100%;
   position: fixed;
-  background: rgba(226, 226, 226, 0.84);
+  z-index: 909;
+  background: rgba(122, 118, 118, 0.73);
   .logo {
-    background: url(assets/images/ky-white.svg) no-repeat;
+    background: url(assets/images/ky-color.svg) no-repeat;
     background-size: 50px;
     margin-left: 100px;
     height: 50px;
     width: 50px;
   }
   ul {
-    list-style: none;
     display: flex;
     margin-right: 100px;
     a {
       text-decoration: none;
       text-transform: uppercase;
-      text-shadow: 1px 1px 2px #000;
+      // text-shadow: 1px 1px 2px #000;
       padding: 0 10px;
-      color: #fff;
+      color: $color__turq;
       &:hover {
-        color: $color_hover;
+        color: white;
       }
     }
   }

@@ -28,7 +28,7 @@ get_header(); ?>
 					<p>
 						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
 					</p>
-			</section>
+			</section><!-- .about -->
 
 			<!-- Projects -->
 
@@ -37,36 +37,40 @@ get_header(); ?>
 					<h1>Projects</h1>
 				</div>
 
-				<ul>
-				<?php
-					$query = new WP_Query( array(
-						'post_type' => 'projects',
-						'order' => 'ASC',
-						'orderby' => 'name',
-						'posts_per_page' => 6)
-					);
+				<div class="project-container">
+					<ul>
+					<?php
+						$query = new WP_Query( array(
+							'post_type' => 'projects',
+							'order' => 'DSC',
+							'orderby' => 'date',
+							'posts_per_page' => 6)
+						);
 
-					while ( $query->have_posts() ) : $query->the_post(); ?>
+						while ( $query->have_posts() ) : $query->the_post(); ?>
 
-					<li>
-						<div class="project-wrap">
-							<div class="project-image">
-								<?php the_post_thumbnail( 'full' ); ?>
+						<li>
+							<div class="project-wrap">
+								<div class="project-image">
+									<?php the_post_thumbnail( 'full' ); ?>
+								</div>
+								<div class="project-info">
+									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+									<p><?php the_content(); ?></p>
+									<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
+								</div>
 							</div>
-							<div class="project-info">
-								<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-								<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
-							</div>
-						</div>
-					</li>
+						</li>
 
-					<?php endwhile;
-										wp_reset_postdata(); ?>
-				</ul>
-				<p class="clearfix">
+						<?php endwhile;
+											wp_reset_postdata(); ?>
+					</ul>
+				</div><!-- .project-container -->
+				<div class="button-div clearfix">
+					<div class="solid-line"></div>
 					<a href="/projects" class="button">View More</a>
-				</p>
-			</section>
+				</div>
+			</section><!-- .projects -->
 
 
 			<!-- Abilities -->
