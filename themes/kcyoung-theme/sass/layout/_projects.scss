@@ -1,27 +1,46 @@
 .projects {
   .project-wrap {
     position: relative;
-
     margin-left: 10px;
   }
   .project-image{
     background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%);
-    background-size: 300px 500px;
+    background-size: 200px 400px;
+    @include tablet {
+      background-size: 200px 400px;
+    }
+    @include desktop {
+      background-size: 300px 500px;
+    }
     img {
       z-index: -1;
       position: relative;
-      height: 300px;
-      width: 500px;
+      height: 200px;
+      width: 400px;
       display: block;
+      @include tablet {
+        height: 250px;
+        width: 450px;
+      }
+      @include desktop {
+        height: 300px;
+        width: 500px;
+      }
     }
   }
   ul {
-    flex-wrap: wrap;
     @extend .center;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    padding-top: 20px;
     li {
-      flex: 0 1 33.33%;
+      flex: 0 1 25%;
       margin-bottom: 10px;
+      @include tablet {
+        flex: 0 1 33.33%;
+      }
+      @include desktop {
+      flex: 0 1 33.33%;
+      }
     }
   }
   .project-info {
@@ -42,8 +61,14 @@
     display: flex;
     .solid-line {
       background: $color__li-grey;
-      width: 630px;
+      width: 31.5%;
       height: 40px;
+      @include tablet {
+        width: 40%;
+      }
+      @include desktop {
+        width: 44%;
+      }
     }
     .button {
       background: $color__dk-grey;

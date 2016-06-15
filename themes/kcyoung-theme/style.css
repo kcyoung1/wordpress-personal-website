@@ -246,7 +246,7 @@ h1 {
   height: 800px;
   width: 100%; }
   .hero-banner h1 {
-    color: #fff; }
+    color: white; }
 
 .about {
   -ms-flex-direction: column;
@@ -254,7 +254,13 @@ h1 {
   height: 250px; }
   .about p {
     font-size: 1.5rem;
-    width: 400px; }
+    width: 350px; }
+    @media (min-width: 650px) {
+      .about p {
+        width: 400px; } }
+    @media (min-width: 1120px) {
+      .about p {
+        width: 600px; } }
 
 .projects .project-wrap {
   position: relative;
@@ -262,22 +268,44 @@ h1 {
 
 .projects .project-image {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
-  background-size: 300px 500px; }
+  background-size: 200px 400px; }
+  @media (min-width: 650px) {
+    .projects .project-image {
+      background-size: 200px 400px; } }
+  @media (min-width: 1120px) {
+    .projects .project-image {
+      background-size: 300px 500px; } }
   .projects .project-image img {
     z-index: -1;
     position: relative;
-    height: 300px;
-    width: 500px;
+    height: 200px;
+    width: 400px;
     display: block; }
+    @media (min-width: 650px) {
+      .projects .project-image img {
+        height: 250px;
+        width: 450px; } }
+    @media (min-width: 1120px) {
+      .projects .project-image img {
+        height: 300px;
+        width: 500px; } }
 
 .projects ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 auto; }
+  padding-top: 20px; }
   .projects ul li {
-    -ms-flex: 0 1 33.33%;
-        flex: 0 1 33.33%;
+    -ms-flex: 0 1 25%;
+        flex: 0 1 25%;
     margin-bottom: 10px; }
+    @media (min-width: 650px) {
+      .projects ul li {
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%; } }
+    @media (min-width: 1120px) {
+      .projects ul li {
+        -ms-flex: 0 1 33.33%;
+            flex: 0 1 33.33%; } }
 
 .projects .project-info {
   position: absolute;
@@ -296,8 +324,14 @@ h1 {
   display: flex; }
   .projects .button-div .solid-line {
     background: #cccccc;
-    width: 630px;
+    width: 31.5%;
     height: 40px; }
+    @media (min-width: 650px) {
+      .projects .button-div .solid-line {
+        width: 40%; } }
+    @media (min-width: 1120px) {
+      .projects .button-div .solid-line {
+        width: 44%; } }
   .projects .button-div .button {
     background: #444444;
     padding: 10px 40px; }

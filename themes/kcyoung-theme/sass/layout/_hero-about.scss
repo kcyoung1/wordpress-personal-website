@@ -6,15 +6,21 @@
   width: 100%;
   @extend .center;
   h1 {
-    color: #fff;
+    color: white;
   }
 }
 .about {
   @extend .center;
-  flex-direction: column; 
+  flex-direction: column;
   height: 250px;
   p {
     font-size: 1.5rem;
-    width: 400px;
+    width: 350px;
+    @include tablet {
+      width: 400px;
+    }
+    @include desktop {
+      width: 600px;
+    }
   }
 }
