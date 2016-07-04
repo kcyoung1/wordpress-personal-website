@@ -1,7 +1,9 @@
 .projects {
   .project-wrap {
     position: relative;
-    margin-left: 10px;
+    @include tablet {
+        margin: 0 5px;
+    }
   }
   .project-image{
     background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%);
@@ -15,16 +17,14 @@
     img {
       z-index: -1;
       position: relative;
-      height: 200px;
-      width: 400px;
+      height: 100%;
+      width: 100%;
       display: block;
       @include tablet {
         height: 250px;
-        width: 450px;
       }
       @include desktop {
         height: 300px;
-        width: 500px;
       }
     }
   }
@@ -33,13 +33,13 @@
     flex-wrap: wrap;
     padding-top: 20px;
     li {
-      flex: 0 1 25%;
+      flex: 0 1 100%;
       margin-bottom: 10px;
       @include tablet {
-        flex: 0 1 33.33%;
+        flex: 0 1 50%;
       }
       @include desktop {
-      flex: 0 1 33.33%;
+        flex: 0 1 33.33%;
       }
     }
   }
@@ -53,29 +53,40 @@
       font-size: 1.4rem;
     }
     a {
-      color: white;
+      color: black;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .read-btn {
+    padding: 5px 10px;
+    background: white;
+    &:hover {
+      background: $color__turq;
     }
   }
   .button-div {
     margin-top: 20px;
     display: flex;
-    .solid-line {
-      background: $color__li-grey;
-      width: 31.5%;
-      height: 40px;
-      @include tablet {
-        width: 40%;
-      }
-      @include desktop {
-        width: 44%;
-      }
-    }
+    justify-content: space-between;
     .button {
       background: $color__dk-grey;
       padding: 10px 40px;
       &:hover {
-        background: $color__op-turq;
+        background: $color__turq;
+        }
       }
     }
+    .solid-line {
+      background: $color__li-grey;
+      width: 55%;
+      height: 42px;
+      @include tablet {
+        width: 70%;
+      }
+      @include desktop {
+        width: 85%;
+      }
   }
-}
+} // .projects

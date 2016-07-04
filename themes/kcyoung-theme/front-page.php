@@ -18,12 +18,12 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<!-- Hero Banner -->
-			<div class="hero-banner">
+			<div class="hero-banner" data-type="background" data-speed="10">
 				<h1>Kurtis Young</h1>
 			</div><!-- .hero-banner -->
 
 			<!-- About -->
-			<section class="about">
+			<section id="scroll-target" class="about">
 					<h1>About</h1>
 					<p>
 						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
@@ -55,9 +55,9 @@ get_header(); ?>
 									<?php the_post_thumbnail( 'full' ); ?>
 								</div>
 								<div class="project-info">
-									<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-									<p><?php the_content(); ?></p>
-									<a class="readtag" href="<?php the_permalink(); ?>">Read More</a>
+									<h3><?php the_title(); ?></h3>
+									<p><?php echo wp_kses_post(CFS()->get( 'description' )); ?></p>
+									<a class="read-btn" href="<?php the_permalink(); ?>">Read More</a>
 								</div>
 							</div>
 						</li>
