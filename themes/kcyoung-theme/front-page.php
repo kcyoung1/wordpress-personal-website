@@ -41,14 +41,13 @@ get_header(); ?>
 				<div class="project-container">
 					<ul>
 					<?php
-						$query = new WP_Query( array(
+						$projects = array(
 							'post_type' => 'projects',
 							'order' => 'DSC',
 							'orderby' => 'date',
-							'posts_per_page' => 6)
-						);
-
-						while ( $query->have_posts() ) : $query->the_post(); ?>
+							'posts_per_page' => 6);
+							$projects_posts = get_posts( $projects );
+						foreach ( $projects_posts as $post ) : setup_postdata($post) ; ?>
 
 						<li>
 							<div class="project-wrap">
@@ -63,7 +62,7 @@ get_header(); ?>
 							</div>
 						</li>
 
-						<?php endwhile;
+					<?php endforeach;
 											wp_reset_postdata(); ?>
 					</ul>
 				</div><!-- .project-container -->
@@ -76,6 +75,32 @@ get_header(); ?>
 			<!-- Skills -->
 			<section class="skills">
 				<h1>Skills</h1>
+				<ul>
+				<?php
+					$skills = array(
+						'post_type' => 'skills',
+						'order' => 'ASC',
+						'orderby' => 'date',
+						'posts_per_page' => 6);
+						$skills_posts = get_posts( $skills);
+					foreach ( $skills_posts as $post ) : setup_postdata($post) ; ?>
+
+					<li>
+						<div class="skills-wrap">
+
+							<div class="skills-info">
+								<h3><?php the_title(); ?></h3>
+								<div class="skills-image">
+										<?php the_post_thumbnail('medium'); ?>
+								</div>
+
+							</div>
+						</div>
+					</li>
+
+				<?php endforeach;
+										wp_reset_postdata(); ?>
+			</ul>
 			</section>
 
 
