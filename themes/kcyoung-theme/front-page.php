@@ -23,6 +23,7 @@ get_header(); ?>
 			</div><!-- .hero-banner -->
 
 			<!-- About -->
+
 			<section id="scroll-target" class="about">
 					<h1>About</h1>
 					<p>
@@ -72,10 +73,9 @@ get_header(); ?>
 				</div>
 			</section><!-- .projects -->
 
-
-			<!-- Abilities -->
-			<section class="abilities">
-				<h1>Abilities</h1>
+			<!-- Skills -->
+			<section class="skills">
+				<h1>Skills</h1>
 			</section>
 
 
