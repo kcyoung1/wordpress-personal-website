@@ -229,7 +229,10 @@ th {
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    margin-right: 100px; }
+    margin-right: 40px; }
+    @media (min-width: 650px) {
+      .site-branding ul {
+        margin-right: 100px; } }
     .site-branding ul a {
       text-decoration: none;
       text-transform: uppercase;
@@ -259,7 +262,9 @@ a {
   color: white; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  margin: 40px 0;
+  text-transform: uppercase; }
 
 .hero-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(assets/images/hero-image.jpg) no-repeat center fixed;
@@ -282,6 +287,11 @@ h1 {
     @media (min-width: 1120px) {
       .about p {
         width: 600px; } }
+
+@media (min-width: 1120px) {
+  .projects .project-container {
+    width: 1100px;
+    margin: 0 auto; } }
 
 .projects .project-wrap {
   position: relative;
@@ -322,10 +332,6 @@ h1 {
       .projects ul li {
         -ms-flex: 0 1 50%;
             flex: 0 1 50%; } }
-    @media (min-width: 1120px) {
-      .projects ul li {
-        -ms-flex: 0 1 33.33%;
-            flex: 0 1 33.33%; } }
 
 @media (min-width: 1120px) {
   .projects #hidden {

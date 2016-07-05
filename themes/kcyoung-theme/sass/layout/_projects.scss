@@ -1,4 +1,10 @@
 .projects {
+  .project-container {
+    @include desktop {
+      width: 1100px;
+      margin: 0 auto;
+    }
+  }
   .project-wrap {
     position: relative;
     overflow: hidden;
@@ -39,9 +45,6 @@
       margin-bottom: 10px;
       @include tablet {
         flex: 0 1 50%;
-      }
-      @include desktop {
-        flex: 0 1 33.33%;
       }
     }
   }

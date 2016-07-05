@@ -48,7 +48,7 @@ get_header(); ?>
 
 			<!-- Skills -->
 			<section class="skills">
-					<h1>Skills</h1>
+						<h1>Skills</h1>
 						<?php get_template_part( 'template-parts/content', 'skills' ); ?>
 			</section><!-- .skills -->
 

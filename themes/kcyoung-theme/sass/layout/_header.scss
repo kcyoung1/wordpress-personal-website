@@ -49,7 +49,10 @@
   ul {
     display: flex;
     justify-content: space-between;
-    margin-right: 100px;
+    margin-right: 40px;
+    @include tablet {
+      margin-right: 100px;
+    }
     a {
       text-decoration: none;
       text-transform: uppercase;
