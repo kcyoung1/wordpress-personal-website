@@ -38,34 +38,8 @@ get_header(); ?>
 					<h1>Projects</h1>
 				</div>
 
-				<div class="project-container">
-					<ul>
-					<?php
-						$projects = array(
-							'post_type' => 'projects',
-							'order' => 'DSC',
-							'orderby' => 'date',
-							'posts_per_page' => 6);
-							$projects_posts = get_posts( $projects );
-						foreach ( $projects_posts as $post ) : setup_postdata($post) ; ?>
+				<?php get_template_part( 'template-parts/content', 'projects' ); ?>
 
-						<li>
-							<div class="project-wrap">
-								<div class="project-image">
-									<?php the_post_thumbnail( 'full' ); ?>
-								</div>
-								<div id="hidden" class="project-info">
-									<h3><?php the_title(); ?></h3>
-									<p><?php echo wp_kses_post(CFS()->get( 'description' )); ?></p>
-									<a class="read-btn" href="<?php the_permalink(); ?>">Read More</a>
-								</div>
-							</div>
-						</li>
-
-					<?php endforeach;
-											wp_reset_postdata(); ?>
-					</ul>
-				</div><!-- .project-container -->
 				<div class="button-div clearfix">
 					<div class="solid-line"></div>
 					<a href="/projects" class="button">View More</a>
@@ -74,41 +48,15 @@ get_header(); ?>
 
 			<!-- Skills -->
 			<section class="skills">
-				<h1>Skills</h1>
-				<ul>
-				<?php
-					$skills = array(
-						'post_type' => 'skills',
-						'order' => 'ASC',
-						'orderby' => 'date',
-						'posts_per_page' => 15);
-						$skills_posts = get_posts( $skills);
-					foreach ( $skills_posts as $post ) : setup_postdata($post) ; ?>
-
-					<li>
-							<div class="skills-wrap">
-								<h3><?php the_title(); ?></h3>
-								<div class="skills-image">
-										<?php the_post_thumbnail('thumbnail'); ?>
-								</div>
-							</div>
-					</li>
-
-				<?php endforeach;
-										wp_reset_postdata(); ?>
-			</ul>
-			</section>
-
-
+					<h1>Skills</h1>
+						<?php get_template_part( 'template-parts/content', 'skills' ); ?>
+			</section><!-- .skills -->
 
 			<!-- Contact	 -->
 			<section class="contact">
 				<h1>Contact</h1>
 			</section>
 
-
-
-			</section>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
