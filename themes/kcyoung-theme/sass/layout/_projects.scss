@@ -1,19 +1,21 @@
 .projects {
   .project-wrap {
     position: relative;
+    overflow: hidden;
+    &:hover > #hidden {
+      @include desktop {
+        animation: slide-in 0.5s forwards;
+        -webkit-animation: slide-in 0.5s forwards;
+      }
+    }
     @include tablet {
-        margin: 0 5px;
+        margin: 0 10px;
+    }
+    @include desktop {
+      margin: 0 5px;
     }
   }
   .project-image{
-    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%);
-    background-size: 200px 400px;
-    @include tablet {
-      background-size: 200px 400px;
-    }
-    @include desktop {
-      background-size: 300px 500px;
-    }
     img {
       z-index: -1;
       position: relative;
@@ -43,12 +45,21 @@
       }
     }
   }
+  #hidden {
+    @include desktop {
+      transform: translateX(-100%);
+    }
+  }
   .project-info {
     position: absolute;
     top: 0;
     padding: 20px 30px;
     width: 200px;
     color: white;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%);
+    height: 86.5%;
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
     h3 {
       font-size: 1.4rem;
     }
@@ -73,6 +84,7 @@
     .button {
       background: $color__dk-grey;
       padding: 10px 40px;
+      text-transform: uppercase;
       &:hover {
         background: $color__turq;
         }
@@ -90,3 +102,20 @@
       }
   }
 } // .projects
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
+}
+@keyframes slide-out {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+}
+
+@-webkit-keyframes slide-out {
+    0% { -webkit-transform: translateX(0%); }
+    100% { -webkit-transform: translateX(-100%); }
+}

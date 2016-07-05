@@ -1,42 +1,22 @@
 .sticky {
   .site-branding {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 5px;
     border-bottom: 1px solid $color__li-grey;
     width: 100%;
     position: fixed;
     z-index: 909;
-    background: rgba(122, 118, 118, 0.73);
+    background: rgba(0, 0, 0, 0.73);
     .logo {
       background: url(assets/images/ky-color.svg) no-repeat;
       background-size: 50px;
       height: 50px;
       width: 50px;
-      @include tablet {
-        margin-left: 70px;
-      }
-      @include desktop {
-        margin-left: 100px;
-      }
     }
-    ul {
-      display: flex;
-      margin-right: 100px;
-      a {
-        text-decoration: none;
-        text-transform: uppercase;
-        text-shadow: none;
-        padding: 0 10px;
-        color: $color__turq;
-        font-size: .8rem;
-        &:hover {
-          color: white;
-        }
-        @include tablet {
-          font-size: 1rem;
-        }
+    a {
+      text-shadow: none;
+      color: $color__turq;
+      &:hover {
+        color: white;
       }
     }
   } // .site-branding
@@ -62,7 +42,9 @@
     }
   }
   nav {
-    width: 65%;
+    @include tablet {
+      width: 65%;
+    }
   }
   ul {
     display: flex;

@@ -44,7 +44,7 @@ jQuery(document).ready(function() {
     });
 
     // Parallax Scrolling
-    
+
     var $window = jQuery(window); //You forgot this line in the above example
 
     jQuery('div[data-type="background"]').each(function() {

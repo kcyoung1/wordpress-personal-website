@@ -54,7 +54,7 @@ get_header(); ?>
 								<div class="project-image">
 									<?php the_post_thumbnail( 'full' ); ?>
 								</div>
-								<div class="project-info">
+								<div id="hidden" class="project-info">
 									<h3><?php the_title(); ?></h3>
 									<p><?php echo wp_kses_post(CFS()->get( 'description' )); ?></p>
 									<a class="read-btn" href="<?php the_permalink(); ?>">Read More</a>
