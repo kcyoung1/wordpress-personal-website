@@ -81,21 +81,17 @@ get_header(); ?>
 						'post_type' => 'skills',
 						'order' => 'ASC',
 						'orderby' => 'date',
-						'posts_per_page' => 6);
+						'posts_per_page' => 15);
 						$skills_posts = get_posts( $skills);
 					foreach ( $skills_posts as $post ) : setup_postdata($post) ; ?>
 
 					<li>
-						<div class="skills-wrap">
-
-							<div class="skills-info">
+							<div class="skills-wrap">
 								<h3><?php the_title(); ?></h3>
 								<div class="skills-image">
-										<?php the_post_thumbnail('medium'); ?>
+										<?php the_post_thumbnail('thumbnail'); ?>
 								</div>
-
 							</div>
-						</div>
 					</li>
 
 				<?php endforeach;
