@@ -338,9 +338,11 @@ h1 {
   width: 200px;
   color: white;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%);
-  height: 86.5%;
-  animation: slide-out 0.5s forwards;
-  -webkit-animation: slide-out 0.5s forwards; }
+  height: 86.5%; }
+  @media (min-width: 1120px) {
+    .projects .project-info {
+      animation: slide-out 0.5s forwards;
+      -webkit-animation: slide-out 0.5s forwards; } }
   .projects .project-info h3 {
     font-size: 1.4rem; }
   .projects .project-info a {
