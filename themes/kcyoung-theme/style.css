@@ -1,4 +1,4 @@
-.center, .hero-banner, .about, .about .about-title, .projects ul, .skills-wrap, .skills-wrap .skills-info, .site-footer {
+.center, .hero-banner, .about, .about .about-title, .projects ul, .skills-wrap, .skills-wrap .skills-info, .site-footer, .site-footer .social-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -479,3 +479,32 @@ h1 {
   height: 150px;
   width: 100%;
   color: white; }
+  .site-footer a {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin: 0 5px; }
+  .site-footer .twitter {
+    background: url(assets/images/icons/twitter-white.png);
+    background-size: cover; }
+    .site-footer .twitter:hover {
+      background: url(assets/images/icons/twitter-color.png);
+      background-size: cover; }
+  .site-footer .instagram {
+    background: url(assets/images/icons/instagram-white.png);
+    background-size: cover; }
+    .site-footer .instagram:hover {
+      background: url(assets/images/icons/instagram-color.png);
+      background-size: cover; }
+  .site-footer .linkedin {
+    background: url(assets/images/icons/linkedin-white.png);
+    background-size: cover; }
+    .site-footer .linkedin:hover {
+      background: url(assets/images/icons/linkedin-color.png);
+      background-size: cover; }
+  .site-footer .github {
+    background: url(assets/images/icons/github-white.png);
+    background-size: cover; }
+    .site-footer .github:hover {
+      background: url(assets/images/icons/github-color.png);
+      background-size: cover; }

@@ -15,15 +15,13 @@
 
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
-					<p>
-						designed and built by Kurtis Young
-					</p>
-					<div class="social-container">
-						<div class="twitter"></div>
-						<div class="instagram"></div>
-						<div class="linkedin"></div>
-						<div class="github"></div>
-					</div>
+				<div class="social-container">
+					<a href="https://twitter.com/_WeAreYoung_" class="twitter"></a>
+					<a href="https://www.instagram.com/w_areyoung/" class="instagram"></a>
+					<a href="https://www.linkedin.com/in/kcyoung1" class="linkedin"></a>
+					<a href="https://github.com/kcyoung1" class="github"></a>
+				</div>
+				<p>&copy; designed and built by Kurtis Young</p>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
