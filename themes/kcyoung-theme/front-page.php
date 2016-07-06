@@ -20,6 +20,7 @@ get_header(); ?>
 			<!-- Hero Banner -->
 			<div class="hero-banner" data-type="background" data-speed="10">
 				<h1>Kurtis Young</h1>
+				<h3>Front End Developer</h3>
 			</div><!-- .hero-banner -->
 
 			<!-- About -->

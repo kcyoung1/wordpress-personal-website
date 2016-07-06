@@ -304,7 +304,9 @@ h1 {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(assets/images/hero-image.jpg) no-repeat center fixed;
   background-size: cover;
   height: 350px;
-  width: 100%; }
+  width: 100%;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   @media (min-width: 650px) {
     .hero-banner {
       height: 450px; } }
@@ -312,7 +314,11 @@ h1 {
     .hero-banner {
       height: 750px; } }
   .hero-banner h1 {
-    color: white; }
+    color: white;
+    margin-bottom: 5px; }
+  .hero-banner h3 {
+    color: white;
+    margin-top: 5px; }
 
 .about {
   -ms-flex-direction: column;
@@ -413,7 +419,7 @@ h1 {
       -webkit-animation: slide-in 0.5s forwards; } }
   @media (min-width: 650px) {
     .projects .project-wrap {
-      margin: 0 10px; } }
+      margin: 0 5px; } }
   @media (min-width: 1120px) {
     .projects .project-wrap {
       margin: 0 5px; } }
@@ -421,15 +427,9 @@ h1 {
 .projects .project-image img {
   z-index: -1;
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
   display: block; }
-  @media (min-width: 650px) {
-    .projects .project-image img {
-      height: 250px; } }
-  @media (min-width: 1120px) {
-    .projects .project-image img {
-      height: 300px; } }
 
 .projects ul {
   -ms-flex-wrap: wrap;
