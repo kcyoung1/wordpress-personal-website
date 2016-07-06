@@ -319,7 +319,8 @@ h1 {
 
 .projects .section-title {
   background: black;
-  color: white; }
+  color: white;
+  margin-left: auto; }
 
 .projects .project-wrap {
   position: relative;
@@ -399,7 +400,8 @@ h1 {
   .projects .button-div .button {
     background: #444444;
     padding: 10px 40px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
     .projects .button-div .button:hover {
       background: #2fc4c4; }
 
@@ -461,11 +463,9 @@ h1 {
     padding: 5px 30px;
     background: #2fc4c4;
     color: white;
-    border: 1px solid #2fc4c4; }
+    border: none; }
     .contact-container .wpcf7-submit:hover {
-      background: white;
-      border: 1px solid black;
-      color: black; }
+      background: #444444; }
   .contact-container .contact-message {
     width: 300px;
     margin-left: 30px;

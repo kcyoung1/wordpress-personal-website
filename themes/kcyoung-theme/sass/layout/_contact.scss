@@ -4,11 +4,9 @@
     padding: 5px 30px;
     background: $color__turq;
     color: white;
-    border: 1px solid $color__turq;
+    border: none;
     &:hover {
-      background: white;
-      border: 1px solid black;
-      color: black;
+      background: $color__dk-grey;
     }
   }
   .contact-message{

@@ -8,6 +8,7 @@
   .section-title {
     background: black;
     color: white;
+    margin-left: auto;
   }
   .project-wrap {
     position: relative;
@@ -94,6 +95,7 @@
       background: $color__dk-grey;
       padding: 10px 40px;
       text-transform: uppercase;
+      cursor: pointer;
       &:hover {
         background: $color__turq;
         }
