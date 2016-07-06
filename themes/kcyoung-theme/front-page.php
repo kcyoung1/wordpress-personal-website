@@ -30,7 +30,7 @@ get_header(); ?>
 							<h1 id="about">About</h1>
 				</div>
 					<p>
-						Web Developer. Creating amazing websites for amazing people. Born and raised in Edmonton, Alberta, living in Vancouver, B.C.
+						Graduated from the University of Alberta with an Accounting degree. Moved out to Vancouver to pursue my dream. I'm currently living by the sea. This paragraph is a rhyme about me. 
 					</p>
 			</section><!-- .about -->
 
@@ -68,7 +68,7 @@ get_header(); ?>
 					</div>
 					<div class="contact-message">
 							<p>
-								If you have an enquiry, please send me an email using this form. I'll get back to you as soon as possible. Thank you.
+								If you have an enquiry, send me an email and I'll get back to you as soon as possible. Thank you.
 							</p>
 					</div>
 				</div>

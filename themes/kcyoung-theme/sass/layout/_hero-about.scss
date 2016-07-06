@@ -24,7 +24,7 @@
 .about {
   @extend .center;
   flex-direction: column;
-  height: 250px;
+  height: 330px;
   margin-top: 30px;
   @include tablet {
     flex-direction: row;
