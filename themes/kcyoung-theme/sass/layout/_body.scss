@@ -15,6 +15,17 @@ a {
 }
 h1 {
   text-align: center;
-  margin: 40px 0;
+  margin: 70px 0;
   text-transform: uppercase;
+}
+.section-title {
+  background: $color__turq;
+  color: white;
+  width: 250px;
+  @include tablet {
+    width: 400px;
+  }
+  @include desktop {
+    width: 600px;
+  }
 }

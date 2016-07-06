@@ -1,0 +1,22 @@
+.contact-container {
+  margin-bottom: 30px;
+  .wpcf7-submit {
+    padding: 5px 30px;
+    background: $color__turq;
+    color: white;
+    border: 1px solid $color__turq;
+    &:hover {
+      background: white;
+      border: 1px solid black;
+      color: black;
+    }
+  }
+  .contact-message{
+    width: 300px;
+    margin-left: 30px;
+    display: none;
+    @include tablet {
+      display: block;
+    }
+  }
+}

@@ -29,7 +29,7 @@ get_header(); ?>
 							<h1>About</h1>
 				</div>
 					<p>
-						Web Developer who creates amazing websites for amazing people. Born and raised in Edmonton, Alberta, living in Vancouver, B.C.
+						Web Developer. Creating amazing websites for amazing people. Born and raised in Edmonton, Alberta, living in Vancouver, B.C.
 					</p>
 			</section><!-- .about -->
 
@@ -61,7 +61,17 @@ get_header(); ?>
 				<div class="section-title">
 					<h1>Contact</h1>
 				</div>
-				<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+				<div class="center contact-container">
+					<div class="contact-form">
+						<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
+					</div>
+					<div class="contact-message">
+							<p>
+								If you have an enquiry, please send me an email through this form. In your message, outline your proposal and I'll get back to you as soon as possible. Thank you. 
+							</p>
+					</div>
+				</div>
+
 			</section>
 
 		</main><!-- #main -->
