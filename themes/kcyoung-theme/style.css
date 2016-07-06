@@ -245,7 +245,7 @@ th {
 .home .projects-nav {
   display: none; }
 
-.post-type-archive .site-branding, .single-projects .site-branding {
+.post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding {
   display: none; }
 
 .projects-nav {
