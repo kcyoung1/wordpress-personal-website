@@ -1,14 +1,5 @@
 .contact-container {
   margin-bottom: 30px;
-  .wpcf7-submit {
-    padding: 5px 30px;
-    background: $color__turq;
-    color: white;
-    border: none;
-    &:hover {
-      background: $color__dk-grey;
-    }
-  }
   .contact-message{
     width: 300px;
     margin-left: 30px;
@@ -16,5 +7,14 @@
     @include tablet {
       display: block;
     }
+  }
+}
+.wpcf7-submit {
+  padding: 5px 30px;
+  background: $color__turq;
+  color: white;
+  border: none;
+  &:hover {
+    background: $color__dk-grey;
   }
 }

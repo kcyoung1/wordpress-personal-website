@@ -1,4 +1,4 @@
-.center, .site-branding, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image {
+.center, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image, .single-projects .projects-link a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -200,6 +200,10 @@ th {
 
 .site-branding {
   position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   padding: 5px;
   width: 100%; }
   .site-branding .logo {
@@ -259,13 +263,9 @@ th {
     background-size: 50px;
     height: 50px;
     width: 50px; }
-  .projects-nav a {
-    text-shadow: none;
-    color: #2fc4c4;
-    text-transform: uppercase;
-    padding: 0 10px; }
-    .projects-nav a:hover {
-      color: white; }
+
+.single-projects .projects-nav {
+  margin-top: 20px; }
 
 html {
   font-family: 'Avenir', Helvetica, sans-serif;
@@ -303,8 +303,14 @@ h1 {
 .hero-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(assets/images/hero-image.jpg) no-repeat center fixed;
   background-size: cover;
-  height: 750px;
+  height: 350px;
   width: 100%; }
+  @media (min-width: 650px) {
+    .hero-banner {
+      height: 450px; } }
+  @media (min-width: 1120px) {
+    .hero-banner {
+      height: 750px; } }
   .hero-banner h1 {
     color: white; }
 
@@ -337,13 +343,6 @@ h1 {
 
 .contact-container {
   margin-bottom: 30px; }
-  .contact-container .wpcf7-submit {
-    padding: 5px 30px;
-    background: #2fc4c4;
-    color: white;
-    border: none; }
-    .contact-container .wpcf7-submit:hover {
-      background: #444444; }
   .contact-container .contact-message {
     width: 300px;
     margin-left: 30px;
@@ -351,6 +350,14 @@ h1 {
     @media (min-width: 650px) {
       .contact-container .contact-message {
         display: block; } }
+
+.wpcf7-submit, .single-projects .entry-content a {
+  padding: 5px 30px;
+  background: #2fc4c4;
+  color: white;
+  border: none; }
+  .wpcf7-submit:hover, .single-projects .entry-content a:hover {
+    background: #444444; }
 
 .site-footer {
   background: black;
@@ -547,3 +554,15 @@ h1 {
   @media (min-width: 1120px) {
     .single-projects .entry-content {
       width: 1100px; } }
+
+.single-projects .projects-link a {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  background: #444444;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px; }
+  .single-projects .projects-link a:hover {
+    background: #2fc4c4; }

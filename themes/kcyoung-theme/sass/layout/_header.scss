@@ -22,7 +22,8 @@
 
 .site-branding {
   position: absolute;
-  @extend .center;
+  display: flex;
+  justify-content: space-between;
   padding: 5px;
   width: 100%;
   .logo {
@@ -91,13 +92,10 @@
     height: 50px;
     width: 50px;
   }
-  a {
-    text-shadow: none;
-    color: $color__turq;
-    text-transform: uppercase;
-    padding: 0 10px;
-    &:hover {
-      color: white;
-    }
+}
+
+.single-projects {
+  .projects-nav {
+    margin-top: 20px;
   }
 }
