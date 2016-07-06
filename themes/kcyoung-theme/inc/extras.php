@@ -27,3 +27,12 @@ function kcyoung_theme_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'kcyoung_theme_body_classes' );
+
+// Archive Projects Title Filter
+function kcyoung_filter_titles($title) {
+	if (is_post_type_archive('projects')){
+		$title = 'Projects';
+	}
+  return $title;
+}
+add_filter('get_the_archive_title','kcyoung_filter_titles');
