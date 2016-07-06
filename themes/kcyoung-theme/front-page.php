@@ -67,7 +67,7 @@ get_header(); ?>
 					</div>
 					<div class="contact-message">
 							<p>
-								If you have an enquiry, please send me an email through this form. In your message, outline your proposal and I'll get back to you as soon as possible. Thank you. 
+								If you have an enquiry, please send an email through this form. Outline a proposal and I'll get back to you as soon as possible. Thank you. 
 							</p>
 					</div>
 				</div>
