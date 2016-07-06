@@ -29,9 +29,7 @@ get_header(); ?>
 				<div class="about-title">
 							<h1 id="about">About</h1>
 				</div>
-					<p>
-						Graduated from the University of Alberta with an Accounting degree. Moved out to Vancouver to pursue my dream. I'm currently living by the sea. This paragraph is a rhyme about me. 
-					</p>
+					<p> My passion for coding comes from the challenges and  successes of creating new projects and websites for clients. </p>
 			</section><!-- .about -->
 
 			<!-- Projects -->

@@ -350,11 +350,12 @@ h1 {
         width: 150px;
         margin-right: 30px; } }
   .about p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 350px; }
     @media (min-width: 650px) {
       .about p {
-        width: 400px; } }
+        width: 400px;
+        font-size: 1.5rem; } }
     @media (min-width: 1120px) {
       .about p {
         width: 600px; } }
