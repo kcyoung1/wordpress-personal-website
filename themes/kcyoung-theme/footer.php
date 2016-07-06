@@ -18,6 +18,12 @@
 					<p>
 						designed and built by Kurtis Young
 					</p>
+					<div class="social-container">
+						<div class="twitter"></div>
+						<div class="instagram"></div>
+						<div class="linkedin"></div>
+						<div class="github"></div>
+					</div>
 			</div><!-- .site-info -->
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
