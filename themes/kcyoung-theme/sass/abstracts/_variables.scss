@@ -7,11 +7,12 @@ $color__li-grey: #cccccc;
 $color__dk-grey: #444444;
 
 
-
-// Extend
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn {
+  padding: 5px 30px;
+  background: $color__turq;
+  color: white;
+  border: none;
+  &:hover {
+    background: $color__dk-grey;
+  }
 }

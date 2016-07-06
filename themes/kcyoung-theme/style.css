@@ -1,10 +1,18 @@
-.center, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image, .single-projects .projects-link a {
+.center, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .error-404 .page-content, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image, .single-projects .projects-link a {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
+
+.btn, .wpcf7-submit, .single-projects .entry-content a {
+  padding: 5px 30px;
+  background: #2fc4c4;
+  color: white;
+  border: none; }
+  .btn:hover, .wpcf7-submit:hover, .single-projects .entry-content a:hover {
+    background: #444444; }
 
 html {
   font-family: sans-serif;
@@ -242,7 +250,7 @@ th {
         .site-branding ul a {
           font-size: 1rem; } }
 
-.home .projects-nav {
+.home .projects-nav, .error404 .projects-nav {
   display: none; }
 
 .post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding {
@@ -361,14 +369,6 @@ h1 {
       .contact-container .contact-message {
         display: block; } }
 
-.wpcf7-submit, .single-projects .entry-content a {
-  padding: 5px 30px;
-  background: #2fc4c4;
-  color: white;
-  border: none; }
-  .wpcf7-submit:hover, .single-projects .entry-content a:hover {
-    background: #444444; }
-
 .site-footer {
   background: black;
   height: 150px;
@@ -403,6 +403,10 @@ h1 {
     .site-footer .github:hover {
       background: url(assets/images/icons/github-color.png);
       background-size: cover; }
+
+.error-404 .page-content {
+  width: 350px;
+  margin: 0 auto; }
 
 @media (min-width: 1120px) {
   .projects .project-container {

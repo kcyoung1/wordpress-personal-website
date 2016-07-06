@@ -14,3 +14,11 @@ $desktop-width: 1120px;
     @content;
   }
 }
+
+// Extend
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

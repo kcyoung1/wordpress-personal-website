@@ -10,11 +10,5 @@
   }
 }
 .wpcf7-submit {
-  padding: 5px 30px;
-  background: $color__turq;
-  color: white;
-  border: none;
-  &:hover {
-    background: $color__dk-grey;
-  }
+  @extend .btn;
 }
