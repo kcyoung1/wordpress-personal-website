@@ -1,4 +1,4 @@
-.center, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info {
+.center, .site-branding, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -200,17 +200,11 @@ th {
 
 .site-branding {
   position: absolute;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  -ms-flex-align: center;
-      align-items: center;
   padding: 5px;
   width: 100%; }
   .site-branding .logo {
     background: url(assets/images/ky-white.svg) no-repeat;
-    background-size: cover;
+    background-size: 50px;
     height: 50px;
     width: 50px; }
     @media (min-width: 650px) {
@@ -262,9 +256,16 @@ th {
       justify-content: flex-end; }
   .projects-nav .logo {
     background: url(assets/images/ky-color.svg) no-repeat;
-    background-size: cover;
+    background-size: 50px;
     height: 50px;
     width: 50px; }
+  .projects-nav a {
+    text-shadow: none;
+    color: #2fc4c4;
+    text-transform: uppercase;
+    padding: 0 10px; }
+    .projects-nav a:hover {
+      color: white; }
 
 html {
   font-family: 'Avenir', Helvetica, sans-serif;
@@ -283,8 +284,7 @@ a {
 
 h1 {
   text-align: center;
-  text-transform: uppercase;
-  margin: 0; }
+  text-transform: uppercase; }
 
 .section-title {
   background: #2fc4c4;
@@ -531,6 +531,12 @@ h1 {
       .skills-wrap img {
         height: 130px;
         width: 130px; } }
+
+.single-projects .single-image {
+  background: black; }
+
+.single-projects img {
+  height: auto; }
 
 .single-projects .entry-content {
   margin: 0 auto;

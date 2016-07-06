@@ -1,4 +1,14 @@
 .single-projects {
+  h3 {
+    @extend .center;
+  }
+   .single-image {
+     background: black;
+     @extend .center;
+   }
+   img {
+     height: auto;
+   }
    .entry-content {
      margin: 0 auto;
      width: 350px;

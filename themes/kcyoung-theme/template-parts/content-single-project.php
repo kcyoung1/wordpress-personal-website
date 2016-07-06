@@ -8,44 +8,20 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php
-			if ( is_single() ) {
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			} else {
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			}
+		<div class="single-image">
+			<?php if ( has_post_thumbnail() ) : ?>
+				<?php the_post_thumbnail( 'full' ); ?>
+			<?php endif; ?>
+		</div>
 
-		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php kcyoung_theme_posted_on(); ?>
-		</div><!-- .entry-meta -->
-		<?php
-		endif; ?>
+		<h1><?php the_title(); ?></h1>
+		<h3><?php echo wp_kses_post(CFS()->get( 'description' )); ?></h3>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<?php
-			the_content( sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'kcyoung-theme' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			) );
-
-			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'kcyoung-theme' ),
-				'after'  => '</div>',
-			) );
-		?>
-		<?php if ( 'post' === get_post_type() ) : ?>
-			<a href="<?php echo wp_kses_post(CFS()->get( 'github-link' )); ?>">GitHub</a>
-			<a href="<?php echo wp_kses_post(CFS()->get( 'website-link' )); ?>">Website</a>
-		<?php
-		endif; ?>
-
-
+		<?php the_content(); ?>
 	</div><!-- .entry-content -->
-
+	<a href="<?php echo wp_kses_post(CFS()->get( 'github-link' )); ?>"></a>
 </article><!-- #post-## -->

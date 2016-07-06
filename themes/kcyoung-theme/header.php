@@ -37,6 +37,7 @@
 		</div><!-- .site-branding -->
 
 		<div class="projects-nav">
+				<a href="/projects">Projects</a>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="logo"></div></a>
 		</div><!-- .projects-nav -->
 
