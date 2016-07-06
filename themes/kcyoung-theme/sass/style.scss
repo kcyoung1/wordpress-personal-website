@@ -6,7 +6,9 @@
 @import "layout/header";
 @import "layout/body";
 @import "layout/hero-about";
-@import "layout/projects";
-@import "layout/skills";
 @import "layout/contact";
 @import "layout/footer";
+
+@import "template/projects";
+@import "template/skills";
+@import "template/single-project";

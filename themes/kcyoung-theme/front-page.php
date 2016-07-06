@@ -25,8 +25,8 @@ get_header(); ?>
 			<!-- About -->
 
 			<section id="scroll-target" class="about">
-				<div id="about" class="about-title">
-							<h1>About</h1>
+				<div class="about-title">
+							<h1 id="about">About</h1>
 				</div>
 					<p>
 						Web Developer. Creating amazing websites for amazing people. Born and raised in Edmonton, Alberta, living in Vancouver, B.C.
@@ -67,7 +67,7 @@ get_header(); ?>
 					</div>
 					<div class="contact-message">
 							<p>
-								If you have an enquiry, please send an email through this form. Outline a proposal and I'll get back to you as soon as possible. Thank you.
+								If you have an enquiry, please send me an email using this form. I'll get back to you as soon as possible. Thank you.
 							</p>
 					</div>
 				</div>

@@ -1,4 +1,4 @@
-.center, .hero-banner, .about, .about .about-title, .projects ul, .skills-wrap, .skills-wrap .skills-info, .site-footer, .site-footer .social-container {
+.center, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .projects ul, .skills-wrap, .skills-wrap .skills-info {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -183,12 +183,10 @@ th {
   padding: 0; }
 
 .sticky .site-branding {
-  padding: 5px;
   border-bottom: 1px solid #cccccc;
-  width: 100%;
   position: fixed;
   z-index: 909;
-  background: rgba(0, 0, 0, 0.73); }
+  background: rgba(0, 0, 0, 0.8); }
   .sticky .site-branding .logo {
     background: url(assets/images/ky-color.svg) no-repeat;
     background-size: 50px;
@@ -212,7 +210,7 @@ th {
   width: 100%; }
   .site-branding .logo {
     background: url(assets/images/ky-white.svg) no-repeat;
-    background-size: 50px;
+    background-size: cover;
     height: 50px;
     width: 50px; }
     @media (min-width: 650px) {
@@ -246,6 +244,28 @@ th {
         .site-branding ul a {
           font-size: 1rem; } }
 
+.home .projects-nav {
+  display: none; }
+
+.post-type-archive .site-branding, .single-projects .site-branding {
+  display: none; }
+
+.projects-nav {
+  padding: 5px;
+  width: 20%;
+  position: fixed;
+  z-index: 909;
+  background: rgba(0, 0, 0, 0.8);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .projects-nav .logo {
+    background: url(assets/images/ky-color.svg) no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px; }
+
 html {
   font-family: 'Avenir', Helvetica, sans-serif;
   font-size: 16px;
@@ -263,19 +283,22 @@ a {
 
 h1 {
   text-align: center;
-  margin: 70px 0;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 0; }
 
 .section-title {
   background: #2fc4c4;
   color: white;
+  margin: 20px 0;
   width: 250px; }
   @media (min-width: 650px) {
     .section-title {
-      width: 400px; } }
+      width: 400px;
+      margin: 40px 0; } }
   @media (min-width: 1120px) {
     .section-title {
-      width: 600px; } }
+      width: 600px;
+      margin: 60px 0; } }
 
 .hero-banner {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), url(assets/images/hero-image.jpg) no-repeat center fixed;
@@ -311,6 +334,58 @@ h1 {
     @media (min-width: 1120px) {
       .about p {
         width: 600px; } }
+
+.contact-container {
+  margin-bottom: 30px; }
+  .contact-container .wpcf7-submit {
+    padding: 5px 30px;
+    background: #2fc4c4;
+    color: white;
+    border: none; }
+    .contact-container .wpcf7-submit:hover {
+      background: #444444; }
+  .contact-container .contact-message {
+    width: 300px;
+    margin-left: 30px;
+    display: none; }
+    @media (min-width: 650px) {
+      .contact-container .contact-message {
+        display: block; } }
+
+.site-footer {
+  background: black;
+  height: 150px;
+  width: 100%;
+  color: white; }
+  .site-footer a {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin: 0 5px; }
+  .site-footer .twitter {
+    background: url(assets/images/icons/twitter-white.png);
+    background-size: cover; }
+    .site-footer .twitter:hover {
+      background: url(assets/images/icons/twitter-color.png);
+      background-size: cover; }
+  .site-footer .instagram {
+    background: url(assets/images/icons/instagram-white.png);
+    background-size: cover; }
+    .site-footer .instagram:hover {
+      background: url(assets/images/icons/instagram-color.png);
+      background-size: cover; }
+  .site-footer .linkedin {
+    background: url(assets/images/icons/linkedin-white.png);
+    background-size: cover; }
+    .site-footer .linkedin:hover {
+      background: url(assets/images/icons/linkedin-color.png);
+      background-size: cover; }
+  .site-footer .github {
+    background: url(assets/images/icons/github-white.png);
+    background-size: cover; }
+    .site-footer .github:hover {
+      background: url(assets/images/icons/github-color.png);
+      background-size: cover; }
 
 @media (min-width: 1120px) {
   .projects .project-container {
@@ -457,54 +532,12 @@ h1 {
         height: 130px;
         width: 130px; } }
 
-.contact-container {
-  margin-bottom: 30px; }
-  .contact-container .wpcf7-submit {
-    padding: 5px 30px;
-    background: #2fc4c4;
-    color: white;
-    border: none; }
-    .contact-container .wpcf7-submit:hover {
-      background: #444444; }
-  .contact-container .contact-message {
-    width: 300px;
-    margin-left: 30px;
-    display: none; }
-    @media (min-width: 650px) {
-      .contact-container .contact-message {
-        display: block; } }
-
-.site-footer {
-  background: black;
-  height: 150px;
-  width: 100%;
-  color: white; }
-  .site-footer a {
-    height: 35px;
-    width: 35px;
-    cursor: pointer;
-    margin: 0 5px; }
-  .site-footer .twitter {
-    background: url(assets/images/icons/twitter-white.png);
-    background-size: cover; }
-    .site-footer .twitter:hover {
-      background: url(assets/images/icons/twitter-color.png);
-      background-size: cover; }
-  .site-footer .instagram {
-    background: url(assets/images/icons/instagram-white.png);
-    background-size: cover; }
-    .site-footer .instagram:hover {
-      background: url(assets/images/icons/instagram-color.png);
-      background-size: cover; }
-  .site-footer .linkedin {
-    background: url(assets/images/icons/linkedin-white.png);
-    background-size: cover; }
-    .site-footer .linkedin:hover {
-      background: url(assets/images/icons/linkedin-color.png);
-      background-size: cover; }
-  .site-footer .github {
-    background: url(assets/images/icons/github-white.png);
-    background-size: cover; }
-    .site-footer .github:hover {
-      background: url(assets/images/icons/github-color.png);
-      background-size: cover; }
+.single-projects .entry-content {
+  margin: 0 auto;
+  width: 350px; }
+  @media (min-width: 650px) {
+    .single-projects .entry-content {
+      width: 650px; } }
+  @media (min-width: 1120px) {
+    .single-projects .entry-content {
+      width: 1100px; } }

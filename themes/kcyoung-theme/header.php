@@ -36,6 +36,10 @@
 				</nav>
 		</div><!-- .site-branding -->
 
+		<div class="projects-nav">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="logo"></div></a>
+		</div><!-- .projects-nav -->
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'kcyoung-theme' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>

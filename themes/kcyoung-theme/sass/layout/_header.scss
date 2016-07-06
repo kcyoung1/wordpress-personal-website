@@ -1,11 +1,9 @@
 .sticky {
   .site-branding {
-    padding: 5px;
     border-bottom: 1px solid $color__li-grey;
-    width: 100%;
     position: fixed;
     z-index: 909;
-    background: rgba(0, 0, 0, 0.73);
+    background: rgba(0, 0, 0, 0.8);
     .logo {
       background: url(assets/images/ky-color.svg) no-repeat;
       background-size: 50px;
@@ -20,7 +18,7 @@
       }
     }
   } // .site-branding
-}
+} // .sticky
 
 .site-branding {
   position: absolute;
@@ -31,7 +29,7 @@
   width: 100%;
   .logo {
     background: url(assets/images/ky-white.svg) no-repeat;
-    background-size: 50px;
+    background-size: cover;
     height: 50px;
     width: 50px;
     @include tablet {
@@ -69,3 +67,29 @@
     }
   }
 } // .site-branding
+
+.home .projects-nav {
+  display: none;
+}
+
+// Projects Navigation
+
+.post-type-archive .site-branding, .single-projects .site-branding {
+  display: none;
+}
+
+.projects-nav {
+  padding: 5px;
+  width: 20%;
+  position: fixed;
+  z-index: 909;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: flex-end;
+  .logo {
+    background: url(assets/images/ky-color.svg) no-repeat;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+  }
+}
