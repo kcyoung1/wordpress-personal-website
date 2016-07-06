@@ -25,7 +25,7 @@ get_header(); ?>
 			<!-- About -->
 
 			<section id="scroll-target" class="about">
-				<div class="about-title">
+				<div id="about" class="about-title">
 							<h1>About</h1>
 				</div>
 					<p>
@@ -35,7 +35,7 @@ get_header(); ?>
 
 			<!-- Projects -->
 
-			<section class="projects">
+			<section id="projects" class="projects">
 				<div class="center section-title">
 					<h1>Projects</h1>
 				</div>
@@ -49,7 +49,7 @@ get_header(); ?>
 			</section><!-- .projects -->
 
 			<!-- Skills -->
-			<section class="skills">
+			<section id="skills"  class="skills">
 						<div class="section-title">
 							<h1>Skills</h1>
 						</div>
@@ -57,7 +57,7 @@ get_header(); ?>
 			</section><!-- .skills -->
 
 			<!-- Contact	 -->
-			<section class="contact">
+			<section id="contact"  class="contact">
 				<div class="section-title">
 					<h1>Contact</h1>
 				</div>
@@ -67,7 +67,7 @@ get_header(); ?>
 					</div>
 					<div class="contact-message">
 							<p>
-								If you have an enquiry, please send an email through this form. Outline a proposal and I'll get back to you as soon as possible. Thank you. 
+								If you have an enquiry, please send an email through this form. Outline a proposal and I'll get back to you as soon as possible. Thank you.
 							</p>
 					</div>
 				</div>
