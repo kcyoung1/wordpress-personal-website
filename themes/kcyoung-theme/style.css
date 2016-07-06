@@ -1,4 +1,4 @@
-.center, .hero-banner, .about, .projects ul, .skills-wrap, .skills-wrap .skills-info {
+.center, .hero-banner, .about, .about .about-title, .projects ul, .skills-wrap, .skills-wrap .skills-info, .site-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -277,7 +277,20 @@ h1 {
 .about {
   -ms-flex-direction: column;
       flex-direction: column;
-  height: 250px; }
+  height: 250px;
+  margin-top: 20px; }
+  @media (min-width: 650px) {
+    .about {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+  @media (min-width: 650px) {
+    .about .about-title {
+      background: black;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      color: white;
+      margin-right: 20px; } }
   .about p {
     font-size: 1.5rem;
     width: 350px; }
@@ -426,3 +439,9 @@ h1 {
       .skills-wrap img {
         height: 130px;
         width: 130px; } }
+
+.site-footer {
+  background: black;
+  height: 150px;
+  width: 100%;
+  color: white; }

@@ -25,16 +25,18 @@ get_header(); ?>
 			<!-- About -->
 
 			<section id="scroll-target" class="about">
-					<h1>About</h1>
+				<div class="about-title">
+							<h1>About</h1>
+				</div>
 					<p>
-						This is my about section. I will talk about how cool and awesome I am. Yes I made this website all by myself.
+						Web Developer who creates amazing websites for amazing people. Born and raised in Edmonton, Alberta, living in Vancouver, B.C.
 					</p>
 			</section><!-- .about -->
 
 			<!-- Projects -->
 
 			<section class="projects">
-				<div class="center">
+				<div class="center section-title">
 					<h1>Projects</h1>
 				</div>
 
@@ -48,13 +50,18 @@ get_header(); ?>
 
 			<!-- Skills -->
 			<section class="skills">
-						<h1>Skills</h1>
+						<div class="section-title">
+							<h1>Skills</h1>
+						</div>
 						<?php get_template_part( 'template-parts/content', 'skills' ); ?>
 			</section><!-- .skills -->
 
 			<!-- Contact	 -->
 			<section class="contact">
-				<h1>Contact</h1>
+				<div class="section-title">
+					<h1>Contact</h1>
+				</div>
+				<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]'); ?>
 			</section>
 
 		</main><!-- #main -->

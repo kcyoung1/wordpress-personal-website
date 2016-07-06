@@ -13,6 +13,21 @@
   @extend .center;
   flex-direction: column;
   height: 250px;
+  margin-top: 20px;
+  @include tablet {
+    flex-direction: row;
+  }
+  .about-title {
+    @extend .center;
+    @include tablet {
+      background: black;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      color: white;
+      margin-right: 20px;
+    }
+  }
   p {
     font-size: 1.5rem;
     width: 350px;
