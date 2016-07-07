@@ -61,7 +61,6 @@ function kcyoung_register_projects() {
 
 }
 add_action( 'init', 'kcyoung_register_projects', 0 );
-
 // Register Custom Post Type
 function kcyoung_skills() {
 
@@ -98,16 +97,16 @@ function kcyoung_skills() {
 		'labels'                => $labels,
 		'supports'              => array( 'title', 'editor', 'thumbnail', 'trackbacks', 'revisions', ),
 		'hierarchical'          => false,
-		'public'                => true,
+		'public'                => false,
 		'show_ui'               => true,
 		'show_in_menu'          => true,
 		'menu_position'         => 5,
 		'menu_icon'             => 'dashicons-hammer',
 		'show_in_admin_bar'     => true,
-		'show_in_nav_menus'     => true,
+		'show_in_nav_menus'     => false,
 		'can_export'            => true,
-		'has_archive'           => true,
-		'exclude_from_search'   => false,
+		'has_archive'           => false,
+		'exclude_from_search'   => true,
 		'publicly_queryable'    => true,
 		'capability_type'       => 'post',
 	);

@@ -27,6 +27,7 @@
 					</div>
 				</div>
 		</li>
+		
 
 	<?php endforeach;
 							wp_reset_postdata(); ?>

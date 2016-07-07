@@ -1,4 +1,4 @@
-.center, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .error-404 .page-content, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image, .single-projects .projects-link a {
+.center, .projects-nav, .hero-banner, .about, .about .about-title, .site-footer, .site-footer .social-container, .error-404 .page-content, .projects ul, .skills-wrap, .skills-wrap .skills-info, .single-projects h3, .single-projects .single-image, .single-projects .projects-link a, .search .site-main, .single-skills .site-main, .search .page-content, .single-skills .page-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -194,7 +194,8 @@ th {
   border-bottom: 1px solid #cccccc;
   position: fixed;
   z-index: 909;
-  background: rgba(0, 0, 0, 0.8); }
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%; }
   .sticky .site-branding .logo {
     background: url(assets/images/ky-color.svg) no-repeat;
     background-size: 50px;
@@ -213,7 +214,7 @@ th {
   -ms-flex-pack: justify;
       justify-content: space-between;
   padding: 5px;
-  width: 100%; }
+  width: 99%; }
   .site-branding .logo {
     background: url(assets/images/ky-white.svg) no-repeat;
     background-size: 50px;
@@ -250,10 +251,10 @@ th {
         .site-branding ul a {
           font-size: 1rem; } }
 
-.home .projects-nav, .error404 .projects-nav {
+.home .projects-nav, .error404 .projects-nav, .single-skills .projects-nav, .search .projects-nav {
   display: none; }
 
-.post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding {
+.post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding, .single-skills .site-branding, .search .site-branding {
   display: none; }
 
 .projects-nav {
@@ -575,3 +576,29 @@ h1 {
   width: 80px; }
   .single-projects .projects-link a:hover {
     background: #2fc4c4; }
+
+.search .site-main, .single-skills .site-main {
+  width: 350px;
+  margin: 0 auto;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media (min-width: 650px) {
+    .search .site-main, .single-skills .site-main {
+      width: 650px; } }
+  @media (min-width: 1120px) {
+    .search .site-main, .single-skills .site-main {
+      width: 900px; } }
+
+.search article a, .single-skills article a {
+  color: #2fc4c4; }
+  .search article a:hover, .single-skills article a:hover {
+    color: #444444; }
+
+.search .page-content, .single-skills .page-content {
+  width: 350px;
+  margin: 0 auto;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.search .btn, .search .wpcf7-submit, .search .single-projects .entry-content a, .single-projects .entry-content .search a, .single-skills .btn, .single-skills .wpcf7-submit, .single-skills .single-projects .entry-content a, .single-projects .entry-content .single-skills a {
+  margin: 20px 0; }

@@ -29,7 +29,7 @@ get_header(); ?>
 				<div class="about-title">
 							<h1 id="about">About</h1>
 				</div>
-					<p> My passion for coding comes from the challenges and  successes of creating new projects and websites for clients. </p>
+					<p>I became a Web Developer because my previous career didn't satisfy my need to be creative. Coding is a passion of mine. It allows me to be innovative while challenging me to think outside the box. I'm always interested in meeting new people with new ideas.</p>
 			</section><!-- .about -->
 
 			<!-- Projects -->

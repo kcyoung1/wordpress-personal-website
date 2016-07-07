@@ -1,0 +1,30 @@
+
+.search, .single-skills {
+  .site-main {
+    width: 350px;
+    margin: 0 auto;
+    @extend .center;
+    flex-direction: column;
+    @include tablet {
+      width: 650px;
+    }
+    @include desktop {
+      width: 900px;
+    }
+  }
+  article a {
+    color: $color__turq;
+    &:hover {
+      color: $color__dk-grey;
+    }
+  }
+  .page-content {
+    width: 350px;
+    margin: 0 auto;
+    @extend .center;
+    flex-direction: column;
+  }
+  .btn {
+    margin: 20px 0;
+  }
+}

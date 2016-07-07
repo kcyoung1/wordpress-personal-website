@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 909;
     background: rgba(0, 0, 0, 0.8);
+    width: 100%;
     .logo {
       background: url(assets/images/ky-color.svg) no-repeat;
       background-size: 50px;
@@ -25,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   padding: 5px;
-  width: 100%;
+  width: 99%;
   .logo {
     background: url(assets/images/ky-white.svg) no-repeat;
     background-size: 50px;
@@ -67,13 +68,13 @@
   }
 } // .site-branding
 
-.home .projects-nav, .error404 .projects-nav {
+.home .projects-nav, .error404 .projects-nav, .single-skills .projects-nav, .search .projects-nav {
   display: none;
 }
 
 // Projects/Error Navigation
 
-.post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding {
+.post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding, .single-skills .site-branding, .search .site-branding {
   display: none;
 }
 
