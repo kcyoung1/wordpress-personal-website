@@ -208,50 +208,87 @@ th {
       color: white; }
 
 .site-branding {
-  position: absolute;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  padding: 5px;
-  width: 99%; }
-  .site-branding .logo {
-    background: url(assets/images/ky-white.svg) no-repeat;
-    background-size: 50px;
-    height: 50px;
-    width: 50px; }
-    @media (min-width: 650px) {
-      .site-branding .logo {
-        margin-left: 70px; } }
-    @media (min-width: 1120px) {
-      .site-branding .logo {
-        margin-left: 100px; } }
+  display: none; }
+  @media (min-width: 650px) {
+    .site-branding {
+      position: absolute;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      padding: 5px;
+      width: 99%; } }
+  @media (min-width: 650px) {
+    .site-branding .logo {
+      margin-left: 70px;
+      background: url(assets/images/ky-white.svg) no-repeat;
+      background-size: 50px;
+      height: 50px;
+      width: 50px; } }
+  @media (min-width: 1120px) {
+    .site-branding .logo {
+      margin-left: 100px; } }
   @media (min-width: 650px) {
     .site-branding nav {
       width: 65%; } }
-  .site-branding ul {
+  @media (min-width: 650px) {
+    .site-branding ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      margin-right: 100px; } }
+  .site-branding ul a {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+    padding: 0 10px;
+    color: white;
+    font-size: .8rem; }
+    .site-branding ul a:hover {
+      color: #2fc4c4; }
+    @media (min-width: 650px) {
+      .site-branding ul a {
+        font-size: 1rem; } }
+
+.home .projects-nav, .error404 .projects-nav, .single-skills .projects-nav, .search .projects-nav {
+  display: none; }
+
+.mobile-nav {
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  position: fixed;
+  z-index: 909;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media (min-width: 650px) {
+    .mobile-nav {
+      display: none; } }
+  .mobile-nav .logo {
+    background: url(assets/images/ky-color.svg) no-repeat;
+    background-size: 50px;
+    height: 50px;
+    width: 50px; }
+  .mobile-nav a {
+    text-shadow: none;
+    color: #2fc4c4; }
+    .mobile-nav a:hover {
+      color: white; }
+  .mobile-nav ul {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: justify;
         justify-content: space-between;
-    margin-right: 40px; }
-    @media (min-width: 650px) {
-      .site-branding ul {
-        margin-right: 100px; } }
-    .site-branding ul a {
-      text-decoration: none;
-      text-transform: uppercase;
-      text-shadow: 1px 1px 2px #000;
-      padding: 0 10px;
-      color: white;
-      font-size: .8rem; }
-      .site-branding ul a:hover {
-        color: #2fc4c4; }
-      @media (min-width: 650px) {
-        .site-branding ul a {
-          font-size: 1rem; } }
+    margin-right: 40px;
+    text-transform: uppercase;
+    font-size: .8rem; }
+  .mobile-nav nav {
+    width: 75%; }
 
-.home .projects-nav, .error404 .projects-nav, .single-skills .projects-nav, .search .projects-nav {
+.post-type-archive .mobile-nav, .single-projects .mobile-nav, .error404 .mobile-nav, .single-skills .mobile-nav, .search .mobile-nav {
   display: none; }
 
 .post-type-archive .site-branding, .single-projects .site-branding, .error404 .site-branding, .single-skills .site-branding, .search .site-branding {
@@ -508,7 +545,7 @@ h1 {
 
 .projects .solid-line {
   background: #cccccc;
-  width: 55%;
+  width: 45%;
   height: 42px; }
   @media (min-width: 650px) {
     .projects .solid-line {

@@ -37,6 +37,18 @@
 				</nav>
 		</div><!-- .site-branding -->
 
+		<div class="mobile-nav">
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="logo"></div></a>
+				<nav>
+					<ul>
+						<li><a href="#about">About</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+		</div><!-- .site-branding -->
+
 		<div class="projects-nav">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><div class="logo"></div></a>
 		</div><!-- .projects-nav -->
