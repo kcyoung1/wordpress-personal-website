@@ -6,12 +6,12 @@
   -ms-flex-align: center;
       align-items: center; }
 
-.btn, .wpcf7-submit, .single-projects .entry-content a {
+.btn, .wpcf7-form .wpcf7-submit, .single-projects .entry-content a {
   padding: 5px 30px;
   background: #2fc4c4;
   color: white;
   border: none; }
-  .btn:hover, .wpcf7-submit:hover, .single-projects .entry-content a:hover {
+  .btn:hover, .wpcf7-form .wpcf7-submit:hover, .single-projects .entry-content a:hover {
     background: #444444; }
 
 html {
@@ -417,6 +417,28 @@ h1 {
       .contact-container .contact-message {
         display: block; } }
 
+.wpcf7-form .wpcf7-text {
+  width: 90%;
+  border: 0;
+  border-bottom: 2px solid black;
+  outline: none; }
+  @media (min-width: 650px) {
+    .wpcf7-form .wpcf7-text {
+      width: 100%; } }
+
+.wpcf7-form textarea {
+  width: 90%;
+  border: 0;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  outline: none; }
+  @media (min-width: 650px) {
+    .wpcf7-form textarea {
+      width: 100%; } }
+
+.wpcf7-form .wpcf7-submit {
+  outline: none; }
+
 .site-footer {
   background: black;
   height: 150px;
@@ -646,5 +668,5 @@ h1 {
   -ms-flex-direction: column;
       flex-direction: column; }
 
-.search .btn, .search .wpcf7-submit, .search .single-projects .entry-content a, .single-projects .entry-content .search a, .single-skills .btn, .single-skills .wpcf7-submit, .single-skills .single-projects .entry-content a, .single-projects .entry-content .single-skills a {
+.search .btn, .search .wpcf7-form .wpcf7-submit, .wpcf7-form .search .wpcf7-submit, .search .single-projects .entry-content a, .single-projects .entry-content .search a, .single-skills .btn, .single-skills .wpcf7-form .wpcf7-submit, .wpcf7-form .single-skills .wpcf7-submit, .single-skills .single-projects .entry-content a, .single-projects .entry-content .single-skills a {
   margin: 20px 0; }
