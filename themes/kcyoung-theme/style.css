@@ -532,7 +532,9 @@ h1 {
 .projects ul {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 20px; }
+  padding-top: 20px;
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
   .projects ul li {
     -ms-flex: 0 1 100%;
         flex: 0 1 100%;
