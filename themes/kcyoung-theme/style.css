@@ -312,6 +312,8 @@ th {
     margin-top: 17px; }
   .mobile-nav nav {
     width: 75%; }
+  .mobile-nav li {
+    margin-right: 5px; }
 
 .post-type-archive .mobile-nav, .single-projects .mobile-nav, .error404 .mobile-nav, .single-skills .mobile-nav, .search .mobile-nav {
   display: none; }
@@ -417,7 +419,7 @@ h1 {
     background: black;
     color: white;
     margin-right: auto;
-    padding: 0 35px;
+    padding: 20px 35px;
     margin-bottom: 20px; }
     @media (min-width: 650px) {
       .about .about-title {
@@ -428,7 +430,7 @@ h1 {
         margin-right: 30px; } }
   .about p {
     font-size: 1.2rem;
-    width: 350px; }
+    width: 300px; }
     @media (min-width: 650px) {
       .about p {
         width: 400px;
