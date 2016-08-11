@@ -60,12 +60,15 @@
       padding: 0 10px;
       color: white;
       font-size: .8rem;
-      &:hover {
-        color: $color__turq;
-      }
       @include tablet {
         font-size: 1rem;
       }
+      &:hover {
+        color: $color__turq;
+      }
+    }
+    .nav-active {
+      color: white;
     }
   }
 } // .site-branding
@@ -98,6 +101,9 @@
     &:hover {
       color: white;
     }
+  }
+  .nav-active {
+    color: white;
   }
   ul {
       display: flex;

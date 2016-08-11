@@ -23,12 +23,12 @@ get_header(); ?>
 				<h3>Front End Developer</h3>
 			</div><!-- .hero-banner -->
 
+			<div  id="scroll-target"></div>
+
 			<!-- About -->
 
-			<section id="scroll-target" class="about">
-				<div id="about" class="about-title">
-							<h1>About</h1>
-				</div>
+			<section id="about" class="about">
+					<h1 class="about-title">About</h1>
 					<p>I became a Web Developer because my previous career didn't satisfy my need to be creative. Coding is a passion of mine. It allows me to be innovative while challenging me to think outside the box. I'm always interested in meeting new people with new ideas.</p>
 			</section><!-- .about -->
 

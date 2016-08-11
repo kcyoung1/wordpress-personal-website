@@ -5,6 +5,7 @@ window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequest
 jQuery(document).ready(function() {
 
     // Sticky Header
+
     var $body = jQuery('body'),
         $target = jQuery('#scroll-target'),
         targetoffsetTop,
@@ -62,18 +63,43 @@ jQuery(document).ready(function() {
 
     // Smooth Scrolling
 
-    jQuery('a[href*=#]:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
-      || location.hostname == this.hostname) {
+    jQuery("nav li a").click(function(evn){
+        evn.preventDefault();
+        jQuery('html,body').scrollTo(this.hash, this.hash);
+    });
 
-        var target = jQuery(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-         jQuery('html,body').animate({
-             scrollTop: target.offset().top -70
-        }, 1000);
-        return false;
-        }
-    }
-  });
+  // Active menu highlight
+
+  var aChildren = jQuery("nav li").children(); // find the a children of the list items
+   var aArray = []; // create the empty aArray
+   for (var i=0; i < aChildren.length; i++) {
+       var aChild = aChildren[i];
+       var ahref = jQuery(aChild).attr('href');
+       aArray.push(ahref);
+   } // this for loop fills the aArray with attribute href values
+
+   jQuery(window).scroll(function(){
+       var windowPos = jQuery(window).scrollTop(); // get the offset of the window from the top of page
+       var windowHeight = jQuery(window).height(); // get the height of the window
+       var docHeight = jQuery(document).height();
+
+       for (var i=0; i < aArray.length; i++) {
+           var theID = aArray[i];
+           var divPos = jQuery(theID).offset().top; // get the offset of the div from the top of page
+           var divHeight = jQuery(theID).height(); // get the height of the div in question
+           if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+               jQuery("a[href='" + theID + "']").addClass("nav-active");
+           } else {
+               jQuery("a[href='" + theID + "']").removeClass("nav-active");
+           }
+       }
+
+       if(windowPos + windowHeight == docHeight) {
+           if (!jQuery("nav li:last-child a").hasClass("nav-active")) {
+               var navActiveCurrent = jQuery(".nav-active").attr("href");
+               jQuery("a[href='" + navActiveCurrent + "']").removeClass("nav-active");
+               jQuery("nav li:last-child a").addClass("nav-active");
+           }
+       }
+   });
 });

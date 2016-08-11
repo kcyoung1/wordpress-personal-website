@@ -265,11 +265,13 @@ th {
     padding: 0 10px;
     color: white;
     font-size: .8rem; }
-    .site-branding ul a:hover {
-      color: #2fc4c4; }
     @media (min-width: 650px) {
       .site-branding ul a {
         font-size: 1rem; } }
+    .site-branding ul a:hover {
+      color: #2fc4c4; }
+  .site-branding ul .nav-active {
+    color: white; }
 
 .home .projects-nav, .error404 .projects-nav, .single-skills .projects-nav, .search .projects-nav {
   display: none; }
@@ -297,6 +299,8 @@ th {
     color: #2fc4c4; }
     .mobile-nav a:hover {
       color: white; }
+  .mobile-nav .nav-active {
+    color: white; }
   .mobile-nav ul {
     display: -ms-flexbox;
     display: flex;

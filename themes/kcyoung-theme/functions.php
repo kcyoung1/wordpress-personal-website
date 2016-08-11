@@ -122,6 +122,8 @@ function kcyoung_theme_scripts() {
 
 	wp_enqueue_script( 'scripts-js', get_template_directory_uri() . '/build/js/scripts.min.js', array('jquery'), false, true );
 
+	wp_enqueue_script( 'scrollTo-js', get_template_directory_uri() . '/build/js/jquery.scrollTo.min.js', array('jquery'), false, true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
