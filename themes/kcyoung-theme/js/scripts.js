@@ -101,5 +101,6 @@ jQuery(document).ready(function() {
                jQuery("nav li:last-child a").addClass("nav-active");
            }
        }
+       
    });
 });
