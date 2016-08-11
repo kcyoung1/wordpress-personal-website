@@ -5,9 +5,17 @@
    .single-image {
      background: black;
      @extend .center;
+     overflow: hidden;
    }
    img {
-     height: auto;
+     height: 350px;
+     width: auto;
+     @include tablet {
+       height: 600px;
+     }
+     @include desktop {
+       height: 700px;
+     }
    }
    .entry-content {
      margin: 0 auto;
